@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:layout_marginBottom="50dip"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#000000">
+          <Xamarians.CropImage.Droid.CropImageView
+              android:id="@+id/image"
+                android:background="#000000"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_x="0dip"
+                android:layout_y="0dip" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="CANCEL" />
+            <Button
+                android:id="@+id/rotateLeft"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/rotate_button"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/done"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="DONE"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>
