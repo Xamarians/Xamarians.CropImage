@@ -19,7 +19,7 @@ namespace Xamarians.CropImage.iOS
         CGSize screenSize;
         double imageWidth, imageHeight;
         double xRatio, yRatio;
-
+        UIImage image;
         public CropImageController(string imagePath) 
         {
             ImagePath = imagePath;
@@ -63,8 +63,9 @@ namespace Xamarians.CropImage.iOS
 			 bottomBar.AddSubview(btnCancel);
 
 			 UIButton rotationButton = new UIButton();
+            image = new UIImage("rotate_button.png");
 			 rotationButton.Frame = new CGRect(screenSize.Width / 2 - 40, 10, 80, 30);
-			 rotationButton.SetImage(new UIImage("rotate_button.png"),UIControlState.Normal);
+			 rotationButton.SetImage(image,UIControlState.Normal);
 			 rotationButton.AddTarget((s,e)=>{ RotateImageTapped();},UIControlEvent.TouchUpInside);
              bottomBar.AddSubview(rotationButton);
 
