@@ -17,7 +17,7 @@ using Xamarians.CropImage;
 
 var cropResult = await CropImageService.Instance.CropImage(filePath, CropRatioType.None);
 
-
+```
 
 Android - in MainActivity file write below code -
 ```c#
