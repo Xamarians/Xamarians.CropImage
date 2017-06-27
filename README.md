@@ -30,5 +30,5 @@ iOS - in AppDelegate file write below code -
 ```
 In ios currently we are having a known bug,to fix this add image from this url to your project and then run - 
  ```c#
-   [https://github.com/Xamarians/Xamarians.CropImage/blob/master/Xamarians.CropImage.iOS/Resources/rotate_button.png]
+   [link](https://github.com/Xamarians/Xamarians.CropImage/blob/master/Xamarians.CropImage.iOS/Resources/rotate_button.png)
 ```
