@@ -28,6 +28,11 @@ namespace Xamarians.CropImage.Droid
             Intent intent = new Intent(_context, typeof(CropImageActivity));
             intent.PutExtra("image-path", imagePath);
             intent.PutExtra("scale", true);
+            if (ratioType == CropRatioType.Square)
+            {
+                intent.PutExtra("aspectX", 1);
+                intent.PutExtra("aspectY", 1);
+            }
             _context.StartActivity(intent);
             return _tcs.Task;
         }
