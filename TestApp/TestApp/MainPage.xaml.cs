@@ -45,7 +45,7 @@ namespace TestApp
 
         private async void CropImage(string filePath)
         {
-            var cropResult = await CropImageService.Instance.CropImage(filePath, CropRatioType.Square);
+            var cropResult = await CropImageService.Instance.CropImage(filePath, CropRatioType.None);
             if (cropResult.IsSuccess)
             {
                 image.Source = cropResult.FilePath;
