@@ -32,7 +32,7 @@ namespace Xamarians.CropImage.Droid
             {
                 intent.PutExtra("aspectX", 1);
                 intent.PutExtra("aspectY", 1);
-            }           
+            }
             _context.StartActivity(intent);
             return _tcs.Task;
         }
